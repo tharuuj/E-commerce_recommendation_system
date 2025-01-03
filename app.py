@@ -13,8 +13,8 @@ trending_products = pd.read_csv("models/trending_products.csv")
 train_data = pd.read_csv("models/clean_data.csv")
 
 # database configuration---------------------------------------
-app.secret_key = "alskdjfwoeieiurlskdjfslkdjf"
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqldb://root:@localhost:3307/ecom"
+app.secret_key = "alskdjfwxxxxxxxxxxxxxxx"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+mysqldb://root:@localhost:3307/#name"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
